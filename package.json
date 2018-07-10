@@ -10,6 +10,8 @@
   "author": "Kuzmenkoar",
   "license": "ISC",
   "scripts": {
+    "test": "mongod --dbpath ../mongoDatabase",
+    "mongod": "node ./bin/mongoLocalServer.js",
     "precommit": "lint-staged",
     "format": "prettier --write **/*.js"
   },
@@ -22,6 +24,7 @@
   "dependencies": {
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
+    "mongod": "^2.0.0",
     "prettier": "^1.13.7"
   }
 }
